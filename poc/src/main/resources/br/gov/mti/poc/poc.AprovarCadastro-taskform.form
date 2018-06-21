@@ -1,0 +1,38 @@
+
+<form id="1553977036">
+<property name="name" value="poc.AprovarCadastro-taskform.form"/>
+<property name="displayMode" value="default"/>
+<property name="status" value="0"/>
+<field position="0" name="aprova" type="CheckBox" id="1114004598">
+<property name="fieldRequired" value="false"/>
+<property name="label" value="quot;enquot;,quot;aprova (aprova)quot;"/>
+<property name="readonly" value="false"/>
+<property name="outputBinding" value="aprova"/>
+<property name="fieldClass" value="java.lang.Boolean"/>
+</field>
+<field position="1" name="confirma" type="CheckBox" id="1117496573">
+<property name="fieldRequired" value="false"/>
+<property name="label" value="quot;enquot;,quot;confirma (confirma)quot;"/>
+<property name="readonly" value="false"/>
+<property name="outputBinding" value="confirma"/>
+<property name="fieldClass" value="java.lang.Boolean"/>
+</field>
+<field position="2" name="idade" type="InputTextInteger" id="167900009">
+<property name="fieldRequired" value="false"/>
+<property name="label" value="quot;enquot;,quot;idade (idade)quot;"/>
+<property name="readonly" value="false"/>
+<property name="outputBinding" value="idade"/>
+<property name="fieldClass" value="java.lang.Integer"/>
+</field>
+<field position="3" name="nome" type="InputText" id="1877104364">
+<property name="fieldRequired" value="false"/>
+<property name="label" value="quot;enquot;,quot;nome (nome)quot;"/>
+<property name="readonly" value="false"/>
+<property name="outputBinding" value="nome"/>
+<property name="fieldClass" value="java.lang.String"/>
+</field>
+<dataHolder inputId="" name="#9BCAFA" type="basicType" outId="aprova" value="java.lang.Boolean" id="aprova"/>
+<dataHolder inputId="" name="#BBBBBB" type="basicType" outId="confirma" value="java.lang.Boolean" id="confirma"/>
+<dataHolder inputId="" name="#FF54A7" type="basicType" outId="idade" value="java.lang.Integer" id="idade"/>
+<dataHolder inputId="" name="#E9E371" type="basicType" outId="nome" value="java.lang.String" id="nome"/>
+</form>

@@ -1,0 +1,14 @@
+package br.gov.mti.poc;
+
+import java.lang.Number;
+
+rule "RegraUnidadeOrganizacionalParaSolicitacaoDiaria"
+	dialect "mvel"
+	ruleflow-group "ValidacaoUnidadeOrganizacionalSolicitacaoDiaria"
+	enabled true
+	when
+		Existe uma solicitação de Diária
+		-A unidade organizacional é diferente de SGI
+	then
+		Funcionário não está na unidade organizacional permitida para solicitar Diária!
+end

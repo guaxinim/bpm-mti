@@ -1,0 +1,3 @@
+[condition][SolicitacaoDiaria]Existe uma solicitação de Diária=$solicitacaoDiaria:SolicitacaoDiaria()
+[condition][SolicitacaoDiaria]-A unidade organizacional é diferente de {valor}=eval($solicitacaoDiaria.getFuncionario().getUnidade() == '{valor}')
+[consequence][]Funcionário não está na unidade organizacional permitida para solicitar Diária!=insert(new SolicitacaoDiariaRejeitada());System.out.println("---> Solicitação de Diária só é permitida para a unidade {valor}");

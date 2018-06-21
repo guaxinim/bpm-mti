@@ -1,0 +1,18 @@
+package br.gov.mti.poc;
+
+dialect "mvel"
+
+import br.gov.mit.poc.*
+import java.util.Date
+
+global java.util.List unidades;
+
+rule "valida unidade organizacional"
+ruleflow-group "unidadeOrganizacional"
+
+when
+	funcionario : Funcionario(unidade memberOf unidades)
+then
+    insert(new SolicitacaoDiaria(funcionario, new Date()))
+	System.out.println("Solicitacao Diaria criada");
+end
